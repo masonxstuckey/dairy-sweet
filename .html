@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grabill Dairy Sweet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Popup for Email Signup -->
+    <div id="emailPopup" class="popup">
+        <div class="popup-content">
+            <h2>Welcome to Grabill Dairy Sweet!</h2>
+            <p>Sign up for exclusive offers and updates!</p>
+            <form id="emailForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#merch">Merch</a></li>
+                <li><a href="#hours">Hours</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#game">Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Menu Section -->
+        <section id="menu">
+            <h1>Our Menu</h1>
+            <div class="menu-item">
+                <h3>Vanilla Ice Cream</h3>
+                <p>Creamy and delicious!</p>
+                <span>$3.00</span>
+            </div>
+            <!-- Add more items similarly -->
+        </section>
+
+        <!-- Merch Section -->
+        <section id="merch">
+            <h1>Shop Our Merch</h1>
+            <div class="merch-item">
+                <img src="hat.jpg" alt="Grabill Hat">
+                <h3>Grabill Hat</h3>
+                <span>$15.00</span>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more items -->
+        </section>
+
+        <!-- Hours Section -->
+        <section id="hours">
+            <h1>Hours & Location</h1>
+            <p>Monday–Friday: 10 AM - 9 PM</p>
+            <p>Saturday–Sunday: 11 AM - 10 PM</p>
+            <iframe src="https://www.google.com/maps/embed" width="600" height="450" style="border:0;"></iframe>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews">
+            <h1>What Our Customers Say</h1>
+            <div id="reviewsContainer">
+                <!-- Google Reviews dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Game Section -->
+        <section id="game">
+            <h1>Catch the Scoops Game</h1>
+            <canvas id="gameCanvas"></canvas>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Grabill Dairy Sweet</p>
+        <div>
+            <a href="#">Facebook</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
