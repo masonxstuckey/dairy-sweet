@@ -3,92 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grabill Dairy Sweet</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Mason Stuckey's Marketing Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .project {
+            margin-bottom: 40px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .project h3 {
+            color: #007BFF;
+        }
+        .project p {
+            line-height: 1.6;
+        }
+        .button {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <!-- Popup for Email Signup -->
-    <div id="emailPopup" class="popup">
-        <div class="popup-content">
-            <h2>Welcome to Grabill Dairy Sweet!</h2>
-            <p>Sign up for exclusive offers and updates!</p>
-            <form id="emailForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <button type="submit">Sign Up</button>
-            </form>
-            <button id="closePopup">Close</button>
+
+<header>
+    <h1>Mason Stuckey's Marketing Portfolio</h1>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Mason Stuckey, a creative marketer with a passion for building impactful campaigns and helping businesses grow. 
+       My experience spans community-focused initiatives, rebranding strategies, and digital marketing efforts. Take a look 
+       at my work and let’s connect!</p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+        <h3>Dairy Sweet Santa Campaign</h3>
+        <p><strong>Goal:</strong> Increase foot traffic and revenue during the holidays by hosting a festive, family-friendly event.</p>
+        <p><strong>What I Did:</strong> Created a strategic marketing plan involving social media ads, in-store promotions, and community outreach.</p>
+        <p><strong>Results:</strong> Sold over 100 gift cards, generating $3,000 in revenue while enhancing community goodwill.</p>
+        <a href="#more-details-santa" class="button" onclick="showDetails('santa')">View More</a>
+        <div id="details-santa" style="display:none;">
+            <p><strong>Strategies:</strong> Designed targeted social media posts, collaborated with local schools and libraries, and trained staff for in-person promotions.</p>
+            <p><strong>Interactive Results:</strong> Used analytics to optimize ad spend, leading to a 20% engagement boost during the campaign.</p>
         </div>
     </div>
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#merch">Merch</a></li>
-                <li><a href="#hours">Hours</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#game">Game</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Menu Section -->
-        <section id="menu">
-            <h1>Our Menu</h1>
-            <div class="menu-item">
-                <h3>Vanilla Ice Cream</h3>
-                <p>Creamy and delicious!</p>
-                <span>$3.00</span>
-            </div>
-            <!-- Add more items similarly -->
-        </section>
-
-        <!-- Merch Section -->
-        <section id="merch">
-            <h1>Shop Our Merch</h1>
-            <div class="merch-item">
-                <img src="hat.jpg" alt="Grabill Hat">
-                <h3>Grabill Hat</h3>
-                <span>$15.00</span>
-                <button>Add to Cart</button>
-            </div>
-            <!-- Add more items -->
-        </section>
-
-        <!-- Hours Section -->
-        <section id="hours">
-            <h1>Hours & Location</h1>
-            <p>Monday–Friday: 10 AM - 9 PM</p>
-            <p>Saturday–Sunday: 11 AM - 10 PM</p>
-            <iframe src="https://www.google.com/maps/embed" width="600" height="450" style="border:0;"></iframe>
-        </section>
-
-        <!-- Reviews Section -->
-        <section id="reviews">
-            <h1>What Our Customers Say</h1>
-            <div id="reviewsContainer">
-                <!-- Google Reviews dynamically inserted here -->
-            </div>
-        </section>
-
-        <!-- Game Section -->
-        <section id="game">
-            <h1>Catch the Scoops Game</h1>
-            <canvas id="gameCanvas"></canvas>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Grabill Dairy Sweet</p>
-        <div>
-            <a href="#">Facebook</a> | <a href="#">Instagram</a>
+    <div class="project">
+        <h3>Pick Me Up Salon Marketing</h3>
+        <p><strong>Goal:</strong> Launch a salon and establish long-term client relationships through creative marketing initiatives.</p>
+        <p><strong>What I Did:</strong> Built a pre-launch buzz with influencers, ran local business partnerships, and hosted a grand launch event.</p>
+        <p><strong>Results:</strong> Achieved full bookings for the first two months, established key partnerships, and secured ongoing repeat clients.</p>
+        <a href="#more-details-salon" class="button" onclick="showDetails('salon')">View More</a>
+        <div id="details-salon" style="display:none;">
+            <p><strong>Strategies:</strong> Developed social media teaser campaigns, introduced subscription plans for nurses, and conducted outreach to local professionals.</p>
+            <p><strong>Interactive Results:</strong> Influencer posts drove 500+ event RSVPs, with live-stream engagement peaking at 120 viewers.</p>
         </div>
-    </footer>
+    </div>
+
+    <div class="project">
+        <h3>Growth Plan for Stuckey Mechanical</h3>
+        <p><strong>Goal:</strong> Rebrand the business to attract high-value markets such as hotels and property managers.</p>
+        <p><strong>What I Did:</strong> Crafted a new brand identity, designed targeted ad campaigns, and improved website SEO.</p>
+        <p><strong>Results:</strong> Increased website traffic by 40% and acquired three long-term maintenance contracts.</p>
+        <a href="#more-details-stuckey" class="button" onclick="showDetails('stuckey')">View More</a>
+        <div id="details-stuckey" style="display:none;">
+            <p><strong>Strategies:</strong> Developed rebranding materials including a new logo, website redesign, and professional brochures.</p>
+            <p><strong>Interactive Results:</strong> Launched a promotional campaign that generated $50,000 in additional revenue in the first quarter.</p>
+        </div>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: masonstuckey03@gmail.com</p>
+    <p>Phone: (260)-750-0582</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Mason Stuckey. All rights reserved.</p>
+</footer>
+
+<script>
+    function showDetails(id) {
+        const details = document.getElementById(`details-${id}`);
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
 </body>
 </html>
